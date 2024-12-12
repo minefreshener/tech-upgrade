@@ -3,7 +3,7 @@
 	{
 		"name": "Cattle",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland"],
+		"terrainsCanBeFoundOn": ["Grassland", "plains"],
 		"food": 1,
 		"improvement": "Pasture",
 		"uniques": ["Resource", "Generated on every [6] tiles <in [{Featureless} {Grassland}] tiles>",
