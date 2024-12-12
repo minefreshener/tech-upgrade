@@ -937,7 +937,7 @@
 		"cityHealth": 25,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
-		"requiredTech": "Military Orgainization",
+		"requiredTech": "Military Organization",
 		"uniques": ["[+1 Production] from [Citadel] tiles [in this city]", "Destroyed when the city is captured", "Obsolete with [Rifling]", "[+1 Culture] <after discovering [Archaeology]>", "[+1 Culture] <after discovering [Flight]>"]
 	},
 	{
@@ -1383,7 +1383,7 @@
 		"hurryCostModifier": 0,
 		"maintenance": 3,
 		"uniques": ["Must be on [River]","[+1 Production] from [River] tiles [in this city]"],
-		"requiredTech": "Replacable Parts"
+		"requiredTech": "Replaceable Parts"
 	},
 
 	// Modern Era
