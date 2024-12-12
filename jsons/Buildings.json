@@ -37,7 +37,7 @@
         },
 	{
 		"name": "Monument",
-		"requiredTech": "Agriculture"
+		"requiredTech": "Pit Mining"
 		"culture": 1,
 		"cost": 40,
 		"hurryCostModifier": 25,
@@ -48,7 +48,7 @@
 		"name": "Stele",
 		"replaces": "Monument",
 		"uniqueTo": "Ethiopia",
-		"requiredTech": "Agriculture"
+		"requiredTech": "Toolmaking"
 		"culture": 1,
 		"faith": 1,
 		"cost": 30,
@@ -89,7 +89,7 @@
 		"name": "Mekewap",
                 "replaces": "Granary",
 		"uniqueTo": "Cree",
-		"requiredTech": "Pottery"
+		"requiredTech": "Agriculture"
 		"cost": 30,
 		"production": 1,
 		"maintenance": 1,
@@ -128,7 +128,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 3},
 		"uniques": ["[+1 Food] from [Camp] tiles [in this city]"],
-		"requiredTech": "Trapping",
+		"requiredTech": "Bronze Working",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson",
 	},
 	// Column 2
@@ -188,7 +188,7 @@
 		"maintenance": 1,
 		"requiredNearbyImprovedResources": ["Grape"],
 		 "uniques": ["Provides [2] [Wine]", "[+1 Culture, +1 Faith] from [Grape] tiles [in this city]"],
-		"requiredTech": "Fermentation"
+		"requiredTech": "Spirituality"
 	},
 	{
 		"name": "Library",
@@ -222,7 +222,7 @@
 		"requiredNearbyImprovedResources": ["Ivory","Horses"],
 		"happiness": 2,
 		"hurryCostModifier": 25,
-		"requiredTech": "Trapping"
+		"requiredTech": "The Wheel"
 	},
 	{
 		"name": "Street Carnival",
@@ -232,7 +232,7 @@
 		"culture": 1,
 		"uniques": ["[+100]% Great Person generation [in this city] <during a Golden Age>"],
 		"hurryCostModifier": 25,
-		"requiredTech": "Trapping"
+		"requiredTech": "Pottery"
 	},
 {
 		"name": "Sugar Shack",
@@ -241,7 +241,7 @@
 		"happiness": 1,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Food, +1 Gold] from [Forest] tiles [in this city]"],
-		"requiredTech": "Trapping"
+		"requiredTech": "Calendar"
 	},
 	{
 		"name": "Water Mill",
@@ -361,7 +361,7 @@
 		"isWonder": true,
 		"uniques": ["Must be next to [Water]", "[+1] Movement <for [Water] units>",
 			"[+1] Sight <for [Water] units>", "Gain a free [Lighthouse] [in this city]", "[+10]% [Food] [in this city]"],
-		"requiredTech": "Optics",
+		"requiredTech": "Shipbuilding",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
 	},
 	{
@@ -399,7 +399,7 @@
 			"[+1 Production] from [Sheep] tiles [in this city]",
 			"[+1 Food] from [Pasture] tiles [in this city]",
 		        "Unsellable", "Provides [1] [Horses] <for [Mongolia] Civilizations> <hidden from users>"],
-		"requiredTech": "Horseback Riding"
+		"requiredTech": "Animal Husbandry"
 	},
 	{
 		"name": "Courthouse",
@@ -424,7 +424,7 @@
 		"food": 3,
 		"culture": 1,
 		"isWonder": true,
-		"requiredTech": "Calendar",
+		"requiredTech": "Construction",
 		"uniques": ["Must be next to [Fresh water]", "Gain a free [Garden] [in this city]", "[+15]% growth [in all cities]"],
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
@@ -482,7 +482,7 @@
 		"culture": 1,
 		"maintenance": 1,
 		"uniques": ["[+33]% Great Person generation [in this city]", "[-33]% Food consumption by specialists [in this city]", "Must be next to [Fresh water]"],
-		"requiredTech": "Philosophy"
+		"requiredTech": "Construction"
 	},
 	{
 		"name": "Terracotta Army",
@@ -572,7 +572,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 3},
 		"uniques": ["Must have an owned [Rare feature] within [1] tiles", "[+1 Food, +1 Production] from every [Rare feature]", "Gain a free [Colosseum] [in this city]"],
-		"requiredTech": "Spirituality",
+		"requiredTech": "Masonry",
 		"quote": "'But the wrath of Huitzilopochtli was great, and as the sacrifice passed each of the four rooms dedicated to the sun god, the sun disappeared or reappeared in the sky.' - Fray Diego Durán"
 	},
 	{
@@ -583,7 +583,7 @@
 		"isNationalWonder": true,
 		"percentStatBonus": {"science": 50},
 		"uniques": ["Only available <if [Library] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [25] per owned city"],
-		"requiredTech": "Philosophy"
+		"requiredTech": "Education"
 	},
 	{
 		"name": "The Oracle",
@@ -650,7 +650,7 @@
 		"hurryCostModifier": 25,
 		"uniques": ["Provides 1 extra copy of each improved luxury resource near this City",
 			"[+1 Gold] from [Resource] tiles [in this city]", "[+25]% [Science] from Trade Routes", "[+25]% [Faith] from Trade Routes"],
-		"requiredTech": "Currency"
+		"requiredTech": "Horseback Riding"
 	},
 	{
 		"name": "Satrap's Court",
@@ -661,7 +661,7 @@
 		"happiness": 2,
 		"uniques": ["[+1 Gold] from [Resource] tiles [in this city]", "[+2 Culture] <during a Golden Age>"],
 		"hurryCostModifier": 25,
-		"requiredTech": "Currency"
+		"requiredTech": "Mathematics"
 	},
 	{
 		"name": "Mint",
@@ -718,7 +718,7 @@
 		"cityStrength": 3,
 		"cityHealth": 15,
 		"uniques": ["[+25]% [Gold] from Trade Routes", "[+15]% Strength <for [Military] units> <when fighting in [Hill] tiles>", "Must be next to [Mountain]"],
-		"requiredTech": "Engineering",
+		"requiredTech": "Theology",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
 	},
 	{
@@ -739,7 +739,7 @@
 		"greatPersonPoints": {"Great Merchant": 3},
 		"isWonder": true,
 		"uniques": ["Must be next to [Water]", "[+1 Gold] from [Water] tiles [in this city]", "Gain a free [Harbor] [in this city]"],
-		"requiredTech": "Shipbuilding",
+		"requiredTech": "Iron Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar",
 	},
 
@@ -847,7 +847,7 @@
 		"production": 2,
 	        "percentStatBonus": {"production": 10},
 		"uniques": ["[+1 Culture] from every [World Wonder]"]
-		"requiredTech": "Metal Casting"
+		"requiredTech": "Guilds"
 	},
 	{
 		"name": "Longhouse",
@@ -860,7 +860,7 @@
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"production": 10},
 		"uniques": ["Gain control over [Forest] tiles in a [3]-tile radius", "[+1 Culture] from [Forest] tiles [in this city]"],
-		"requiredTech": "Metal Casting"
+		"requiredTech": "Guilds"
 	},
 	{
 		"name": "Katorga",
@@ -937,7 +937,7 @@
 		"cityHealth": 25,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
-		"requiredTech": "Chivalry",
+		"requiredTech": "Military Orgainization",
 		"uniques": ["[+1 Production] from [Citadel] tiles [in this city]", "Destroyed when the city is captured", "Obsolete with [Rifling]", "[+1 Culture] <after discovering [Archaeology]>", "[+1 Culture] <after discovering [Flight]>"]
 	},
 	{
@@ -962,7 +962,7 @@
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
 		"uniques": ["[+1 Production] from [Citadel] tiles [in this city]", "[+1 Food, +1 Production] from [Desert] tiles [in this city]", "Destroyed when the city is captured", "Obsolete with [Rifling]", "[+1 Culture] <after discovering [Archaeology]>", "[+1 Culture] <after discovering [Flight]>"],
-		"requiredTech": "Chivalry"
+		"requiredTech": "Military Organization"
 	},
 	{
 		"name": "Alhambra",
@@ -1035,7 +1035,7 @@
 		"requiredBuilding": "Barracks",
 		"maintenance": 1,
 		"uniques": ["New [{Land} {Military}] units start with [15] Experience [in this city]", "All newly-trained [Sword] units [in this city] receive the [Buffalo Horns I] promotion", "Destroyed when the city is captured"],
-		"requiredTech": "Metal Casting"
+		"requiredTech": "Military Organization"
 	},
 
 	// Renaissance Era
@@ -1073,7 +1073,7 @@
 		"requiredBuilding": "Amphitheater",
 		"maintenance": 2,
 		"uniques": ["Destroyed when the city is captured", "[+33]% Great Person generation [in this city]", "[-33]% Unhappiness from [Specialists] [in this city]"],
-		"requiredTech": "Acoustics"
+		"requiredTech": "Printing Press"
 	},
 	{
 		"name": "Bolshoi Theatre",
@@ -1144,7 +1144,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great General": 6},
 		"uniques": ["Must be on [Hill]", "May buy [Military] units with [Faith] [in this city]", "[+20]% Strength <for [Military] units> <vs [City-States]>"],
-		"requiredTech": "Gunpowder",
+		"requiredTech": "Matchlocks",
 		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
 	},
 	{
@@ -1157,7 +1157,7 @@
 		"greatPersonPoints": {"Great General": 6},
 		"uniques": ["[+25]% City Strength from defensive buildings"],
 		"requiredBuilding": "Palace",
-		"requiredTech": "Gunpowder",
+		"requiredTech": "Flintlocks",
 		"quote": "'The Law is a fortress on a hill that armies cannot take or floods wash away.' - The Prophet Muhammed",
 	},
 	// Column 8
@@ -1237,7 +1237,7 @@
 		"cityStrength": 13,
 		"cityHealth": 25,
 		"hurryCostModifier": 25,
-		"requiredTech": "Metallurgy",
+		"requiredTech": "Chemistry",
 		"uniques": ["[+1 Production] from [Fort] tiles [in this city]", "[+1 Production] from [Citadel] tiles [in this city]", "[-25]% enemy spy effectiveness [in this city]", "Destroyed when the city is captured"]
 	},
 	{
@@ -1247,7 +1247,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 6},
 		"uniques": ["Gain a free [Arsenal] [in this city]", "[+15]% Production when constructing [Water] units [in this city]", "[-15]% maintenance costs <for [Water] units>", "[+15]% XP gained from combat <for [Water] units>", "New [{Water} {Military}] units start with [15] Experience [in this city]"],
-		"requiredTech": "Metallurgy",
+		"requiredTech": "Chemistry",
 		"quote": "'Happy is that city which in time of peace thinks of war' - Inscription on the venetian armory",
 	},
 
@@ -1337,7 +1337,7 @@
 		"maintenance": 1,
 		"requiredBuilding": "Armory",
 		"greatPersonPoints": {"Great General": 1},
-		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"uniques": ["New [Military] units start with [35] Experience [in this city]", "Destroyed when the city is captured"],
 		"requiredTech": "Military Science"
 	},
 	{
@@ -1375,7 +1375,7 @@
 		"percentStatBonus": {"gold": 10},
 		"uniques": ["[+1 Gold] per [2] population [in this city]"],
 		"requiredBuilding": "Bank",
-		"requiredTech": "Electricity"
+		"requiredTech": "Industrialization"
 	},
 	{
 		"name": "Hydro Plant",
@@ -1383,7 +1383,7 @@
 		"hurryCostModifier": 0,
 		"maintenance": 3,
 		"uniques": ["Must be on [River]","[+1 Production] from [River] tiles [in this city]"],
-		"requiredTech": "Electricity"
+		"requiredTech": "Replacable Parts"
 	},
 
 	// Modern Era
@@ -1424,7 +1424,7 @@
 		"percentStatBonus": {"culture": 33},
 		"maintenance": 3,
 		"uniques": ["[+1 Culture, +1 Happiness] per [6] social policies adopted", "Destroyed when the city is captured"],
-		"requiredTech": "Radio"
+		"requiredTech": "Industrialization"
 	},
 	{
 		"name": "Eiffel Tower",
