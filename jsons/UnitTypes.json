@@ -19,6 +19,11 @@
         "uniques": ["Transfer Movement to [Great General]"]
     },
     {
+        "name": "Peltast",
+        "movementType": "Land",
+        "uniques": ["Transfer Movement to [Great General]"]
+    },
+    {
         "name": "Ranged Gunpowder",
         "movementType": "Land",
         "uniques": ["Transfer Movement to [Great General]"]
