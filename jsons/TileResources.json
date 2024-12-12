@@ -40,7 +40,7 @@
 	{
 		"name": "Wheat",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert", "Grassland"],
 		"food": 1,
 		"improvement": "Farm",
 		"uniques": ["Resource", "Generated on every [15] tiles <in [{Featureless} {Plains}] tiles>",
@@ -51,7 +51,7 @@
 	{
 	        "name": "Maize",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill", "Flood Plains"],
 		"food": 1,
 		"improvement": "Plantation",
 		"uniques": ["Resource", "Generated on every [25] tiles <in [{Featureless} {Plains}] tiles>",
@@ -74,7 +74,7 @@
 	{
 		"name": "Stone",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland", "Desert", "Tundra", "Hill"],
+		"terrainsCanBeFoundOn": ["Grassland", "Desert", "Tundra", "Hill", "Plains","Snow"],
 		"production": 1,
 		"improvement": "Quarry",
 		"uniques": ["Resource", "Generated on every [6] tiles <in [Mountain] Regions> <in tiles without [Hill]> <in tiles without [Fresh Water]>",
@@ -94,7 +94,7 @@
 	{
 		"name": "Grape",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill"],
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill", "Marsh"],
 		"food": 1,
 		"improvement": "Plantation",
 		"uniques": ["Resource", "Generated on every [15] tiles <in [{Featureless} {Hill}] tiles> <in [Grassland] Regions>",
@@ -108,7 +108,7 @@
 		"name": "Horses",
 		"resourceType": "Strategic",
 		"revealedBy": "Animal Husbandry",
-		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"], // Hill only if plains or grassland
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill","Desert"], // Hill only if plains or grassland
 		"production": 1,
 		"improvement": "Pasture",
 		"uniques": ["Resource", "Guaranteed with Strategic Balance resource option",
@@ -152,7 +152,7 @@
 		"name": "Coal",
 		"resourceType": "Strategic",
 		"revealedBy": "Industrialization",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh"],
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh","Tundra","Snow"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
@@ -173,11 +173,11 @@
 	{
 		"name": "Oil",
 		"resourceType": "Strategic",
-		"revealedBy": "Biology",
+		"revealedBy": "Archeology",
 		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],
 		"improvedBy": ["Oil well", "Offshore Platform"],
 		"improvementStats": {"production": 1},
-		"uniques": ["Resource", "Deposits in [Coast] tiles always provide [4] resources",
+		"uniques": ["Resource", "Deposits in [Coast] tiles always provide [5] resources",
 					"Guaranteed with Strategic Balance resource option",
 					"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
 					"Generated with weight [55] <in [{Featureless} {Tundra}] tiles>",
@@ -199,7 +199,7 @@
 		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle"],
 		"production": 1,
 		"improvement": "Mine",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"production": 2},
 		"uniques": ["Resource", "Generated with weight [15] <in [{Featureless} {Tundra}] tiles>",
 					"Generated with weight [15] <in [{Featureless} {Snow}] tiles>",
 					"Generated with weight [30] <in [Hill] tiles>",
@@ -232,8 +232,8 @@
 	{
 		"name": "Furs",
 		"resourceType": "Luxury",
-		"revealedBy": "Animal Husbandry",
-		"terrainsCanBeFoundOn": ["Forest", "Tundra"],
+		"revealedBy": "Hunting",
+		"terrainsCanBeFoundOn": ["Forest", "Tundra","Jungle"],
 		"gold": 1,
 		"improvement": "Camp",
 		"uniques": ["Resource", "Generated with weight [60] <in [Tundra] Regions>",
@@ -244,7 +244,7 @@
 	{
 		"name": "Cotton",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Agriculture",
 		"terrainsCanBeFoundOn": ["Grassland", "Flood plains"],
 		"gold": 1,
 		"improvement": "Plantation",
@@ -257,8 +257,8 @@
 	{
 		"name": "Gems",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
-		"terrainsCanBeFoundOn": ["Jungle", "Forest", "Hill", "Tundra"],
+		"revealedBy": "Tunnel Mining",
+		"terrainsCanBeFoundOn": ["Forest", "Grassland", "Hill", "Tundra", "Snow"],
 		"gold": 1,
 		"improvement": "Mine",
 		"uniques": ["Resource", "Generated with weight [20] <in [Tundra] Regions>",
@@ -273,8 +273,8 @@
 	{
 		"name": "Gold Ore",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
-		"terrainsCanBeFoundOn": ["Desert", "Hill", "Forest", "Jungle"],
+		"revealedBy": "Tunnel Mining",
+		"terrainsCanBeFoundOn": ["Desert", "Hill", "Forest"],
 		"gold": 1,
 		"improvement": "Mine",
 		"uniques": ["Resource", "Generated with weight [30] <in [Desert] Regions>",
@@ -289,7 +289,7 @@
 	{
 		"name": "Silver",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
+		"revealedBy": "Tunnel Mining",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland"],
 		"gold": 1,
 		"improvement": "Mine",
@@ -309,8 +309,8 @@
 	{
 		"name": "Incense",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
-		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],
+		"revealedBy": "Calendar",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains", "marsh"],
 		"faith": 1,
 		"improvement": "Plantation",
 		"uniques": ["Resource", "Generated with weight [35] <in [Desert] Regions>",
@@ -323,7 +323,7 @@
 	{
 		"name": "Coffee",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Agriculture",
 		"terrainsCanBeFoundOn": ["Grassland","Jungle","Hill"],
 		"food": 1,
 		"improvement": "Plantation",
@@ -337,7 +337,7 @@
 	{
 		"name": "Tea",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Calendar",
 		"terrainsCanBeFoundOn": ["Grassland","Forest","Marsh"],
 		"food": 1,
 		"improvement": "Plantation",
@@ -354,7 +354,7 @@
 	{
 		"name": "Olive",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Calendar",
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill"],
 		"food": 1,
 		"improvement": "Plantation",
@@ -368,8 +368,8 @@
 	},
 	{"name": "Amber",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
-		"terrainsCanBeFoundOn": ["Coast","Forest"],
+		"revealedBy": "Currency",
+		"terrainsCanBeFoundOn": ["Coast","Forest", "Jungle"],
 		"culture": 1,
 		"improvement": "Mine",
 		"improvement": "Fishing Boats",
@@ -384,7 +384,7 @@
 	{
 		"name": "Poppy",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Agriculture",
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill"],
 		"faith": 1,
 		"improvement": "Plantation",
@@ -399,7 +399,7 @@
 	{
 		"name": "Tobacco",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Calendar",
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Jungle", "Forest"],
 		"faith": 1,
 		"improvement": "Plantation",
@@ -414,7 +414,7 @@
 	{
 		"name": "Cocoa",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Agriculture",
 		"terrainsCanBeFoundOn": ["Grassland","Plains","Jungle"],
 		"culture": 1,
 		"improvement": "Plantation",
@@ -428,7 +428,7 @@
 	{
 		"name": "Ivory",
 		"resourceType": "Luxury",
-		"revealedBy": "Animal Husbandry",
+		"revealedBy": "Archery",
 		"terrainsCanBeFoundOn": ["Plains", "Grassland", "Desert"],
 		"gold": 1,
 		"improvement": "Camp",
@@ -445,7 +445,7 @@
 	{
 		"name": "Silk",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Masonry",
 		"terrainsCanBeFoundOn": ["Forest","Jungle"],
 		"culture": 1,
 		"improvement": "Plantation",
@@ -495,7 +495,7 @@
 	{
 		"name": "Sugar",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Agriculture",
 		"terrainsCanBeFoundOn": ["Flood plains", "Grassland", "Marsh", "Jungle"],
 		"food": 1,
 		"improvement": "Plantation",
@@ -510,8 +510,8 @@
 	{
 		"name": "Marble",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
-		"terrainsCanBeFoundOn": ["Desert","Plains","Hill","Grassland"],
+		"revealedBy": "Pit Mining",
+		"terrainsCanBeFoundOn": ["Desert","Plains","Hill","Grassland", "Tundra"],
 		"production": 1,
 		"improvement": "Quarry",
 		"uniques": ["Resource", "[+15]% Production when constructing [All] wonders [in all cities]",
@@ -521,8 +521,8 @@
 	{
 	        "name": "Obsidian",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
-		"terrainsCanBeFoundOn": ["Jungle","Desert","Hill","Grassland"],
+		"revealedBy": "Pit Mning",
+		"terrainsCanBeFoundOn": ["Jungle","Desert","Hill","Grassland", "Snow"],
 		"production": 1,
 		"improvement": "Quarry",
 		"uniques": ["Resource", "Generated with weight [25] <in [Jungle] Regions>",
@@ -546,7 +546,7 @@
 	{
 		"name": "Pearls",
 		"resourceType": "Luxury",
-		"revealedBy": "Sailing",
+		"revealedBy": "Optics",
 		"terrainsCanBeFoundOn": ["Coast"],
 		"gold": 1,
 		"improvement": "Fishing Boats",
@@ -576,7 +576,7 @@
 	{
 		"name": "Citrus",
 		"resourceType": "Luxury",
-		"revealedBy": "Pottery",
+		"revealedBy": "Foraging",
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains"],
 		"food": 1,
 		"improvement": "Plantation",
@@ -591,7 +591,7 @@
 	{
 		"name": "Copper",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
+		"revealedBy": "Pit Mining",
 		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra"],
 		"production": 1,
 		"improvement": "Mine",
@@ -623,7 +623,7 @@
 	{
 		"name": "Salt",
 		"resourceType": "Luxury",
-		"revealedBy": "Mining",
+		"revealedBy": "Pit Mining",
 		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Forest"],
 		"food": 1,
 		"improvement": "Mine",
