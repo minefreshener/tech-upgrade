@@ -18,8 +18,8 @@
 		"terrainsCanBeBuiltOn": ["Forest", "Jungle"],
 		"production": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Archery",
-		"uniques": ["Improvement", "Unavailable <in [Jungle] tiles> <before discovering [Banking]>", "[+1 Production] <after discovering [Scientific Theory]>", "Pillaging this improvement yields approximately [+13 Gold]"],
+		"techRequired": "Toolmaking",
+		"uniques": ["Improvement", "Unavailable <in [Jungle] tiles> <before discovering [Economics]>", "[+1 Production] <after discovering [Scientific Theory]>", "Pillaging this improvement yields approximately [+13 Gold]"],
 		"shortcutKey": "L"
 	},
 	{
@@ -28,8 +28,8 @@
 		"terrainsCanBeBuiltOn": ["Hill"],
 		"production": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Mining",
-		"uniques": ["Improvement", "[+1 Production] <after discovering [Steam Power]>", "Pillaging this improvement yields approximately [+13 Gold]", "Improves [Amber] resource in this tile",
+		"techRequired": "Pit Mining",
+		"uniques": ["Improvement", "[+1 Production] <after discovering [Tunnel Mining]>", "[+1 Production] <after discovering [Steam Power]>", "Pillaging this improvement yields approximately [+13 Gold]", "Improves [Amber] resource in this tile",
 		            "Provides [2] [Iron] <in [Iron] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Coal] <in [Coal] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Aluminum] <in [Aluminum] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Uranium] <in [Uranium] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>",
 		            "Provides [2] [Iron] <in [Iron] tiles> <in [Snow] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Coal] <in [Coal] tiles> <in [Snow] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Aluminum] <in [Aluminum] tiles> <in [Snow] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [2] [Uranium] <in [Uranium] tiles> <in [Snow] tiles> <for [Russia] Civilizations> <hidden from users>",
 		            "Provides [1] [Gems] <in [Gems] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [1] [Silver] <in [Silver] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [1] [Copper] <in [Copper] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [1] [Salt] <in [Salt] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>",
@@ -53,7 +53,7 @@
 		"type": "Improvement",
 		"production": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Trapping",
+		"techRequired": "Hunting",
 		"uniques": ["Improvement", "[+1 Food] <after discovering [Fertilizer]>", "Does not need removal of [Forest]", "Does not need removal of [Jungle]", "[+1 Gold] <after discovering [Economics]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+13 Gold]",
 		            "Provides [1] [Furs] <in [Furs] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [1] [Truffles] <in [Truffles] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>"],
 		"shortcutKey": "C"
@@ -100,7 +100,7 @@
 		"type": "Improvement",
 		"turnsToBuild": 8,
 		"production": 1,
-		"techRequired": "Masonry",
+		"techRequired": "Pit Mining",
 		"uniques": ["Improvement", "[+1 Production] <after discovering [Steam Power]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+13 Gold]",
 		            "Provides [1] [Obsidian] <in [Obsidian] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>", "Provides [1] [Marble] <in [Marble] tiles> <in [Tundra] tiles> <for [Russia] Civilizations> <hidden from users>"],
 		"shortcutKey": "Q"
@@ -121,7 +121,7 @@
 		"type": "Improvement",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"turnsToBuild": 6,
-		"techRequired": "Engineering",
+		"techRequired": "Construction",
 		"uniques": ["Improvement", "Can be built outside your borders", "Gives a defensive bonus of [50]%", "Tile provides yield without assigned population", "Unpillagable", "Will not be replaced by automated units <hidden from users>"],
 		"shortcutKey": "O"
 	},
@@ -156,7 +156,7 @@
 	{
 		"name": "Remove Forest",
 		"turnsToBuild": 4,
-		"techRequired": "Archery",
+		"techRequired": "Machinery",
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "X",
         "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
@@ -164,7 +164,7 @@
 	{
 		"name": "Remove Jungle",
 		"turnsToBuild": 7,
-		"techRequired": "Bronze Working",
+		"techRequired": "Industrialization",
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "X",
         "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
@@ -179,7 +179,7 @@
 	{
 		"name": "Remove Marsh",
 		"turnsToBuild": 5,
-		"techRequired": "Fermentation",
+		"techRequired": "Steam Power",
 		"uniques": ["Can be built outside your borders"],
 		"shortcutKey": "X"
 	},
@@ -385,7 +385,7 @@
 		"terrainsCanBeBuiltOn": ["Grassland", "Plains", "Marsh"],
 		"turnsToBuild": 7,
 		"uniques": ["Improvement", "Cannot be built on [Resource] tiles", "Can only be built on [Coastal] tiles", "[+2 Food] <in [Marsh] tiles>", "[+1 Production, +1 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+16 Gold]"],
-		"techRequired": "Guilds",
+		"techRequired": "Calendar",
 		"shortcutKey": "P"
 	},
 	{
@@ -401,7 +401,7 @@
 			"[+1 Science] <after discovering [Philosophy]>",
 			"[+1 Culture] <after discovering [Archaeology]>",
 			"Pillaging this improvement yields approximately [+13 Gold]"],
-		"techRequired": "Calendar",
+		"techRequired": "Spirtuality",
 		"shortcutKey": "Z"
 	},
 	{
