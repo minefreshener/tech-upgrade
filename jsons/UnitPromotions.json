@@ -3,7 +3,7 @@
 	{
 		"name": "Heal Instantly",
 		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Helicopter"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Helicopter", "Peltast"],
         "row": 0,
         "column": 0
     },
@@ -12,7 +12,7 @@
 	{
 		"name": "Accuracy I",
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder", "Gunpowder","Peltast", "Scout"],
         "column": 1,
         "row": 1
     },
@@ -20,7 +20,7 @@
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder", "Gunpowder","Peltast", "scout"],
         "column": 1,
         "row": 2
     },
@@ -28,7 +28,7 @@
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"],
+		"unitTypes": ["Siege","Archery","Ranged Gunpowder","Peltast", "Scout"],
         "column": 1,
         "row": 3
     },
@@ -69,7 +69,7 @@
 		"name": "Extended Range",
 		"prerequisites": ["Accuracy III","Barrage III","Targeting II","Bombardment II", "Wolfpack II"],
 		"uniques": ["[+1] Range", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine", "Gunpowder", "Peltast"],
         "column": 3,
         "row": 3
 	},
@@ -77,7 +77,7 @@
 		"name": "Indirect Fire",
 		"prerequisites": ["Accuracy III", "Barrage III", "Bombardment II", "Targeting II"],
 		"uniques": ["Ranged attacks may be performed over obstacles", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water"],
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water", "Peltast", "Scout"],
         "column": 3,
         "row": 4
 	},
@@ -110,7 +110,7 @@
 	{
 		"name": "Drill I",
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored", "Peltast"],
         "column": 5,
         "row": 1
 	},
@@ -118,7 +118,7 @@
 		"name": "Drill II",
 		"prerequisites": ["Drill I"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored", "Peltast"],
         "column": 5,
         "row": 2
 	},
@@ -126,7 +126,7 @@
 		"name": "Drill III",
 		"prerequisites": ["Drill II"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored", "Peltast"],
         "column": 5,
         "row": 3
 	},
@@ -142,7 +142,7 @@
 		"name": "Besiege",
 		"prerequisites": ["Shock II","Drill II"],
 		"uniques": ["[+50]% Strength <vs cities>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder"],
+		"unitTypes": ["Sword","Gunpowder", "Armored"],
         "column": 6,
         "row": 3
 	},
@@ -166,7 +166,7 @@
 		"name": "Blitz",
 		"prerequisites": ["Shock III","Drill III","Scouting III","Survivalism III"],
 		"uniques": ["[1] additional attacks per turn", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Scout"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Scout", "Peltast", "Scout"],
         "column": 6,
         "row": 4
 	},
@@ -174,7 +174,7 @@
 		"name": "Woodsman",
 		"prerequisites": ["Shock III","Drill III"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder"],
+		"unitTypes": ["Sword","Gunpowder", "Archery", "Peltast", "Ranged Gunpowder"],
         "column": 6,
         "row": 5
 	},
@@ -182,7 +182,7 @@
 		"name": "Amphibious",
 		"prerequisites": ["Shock I", "Drill I", "Scouting III", "Survivalism III"],
 		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast", "May attack when embarked", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Scout"],
+		"unitTypes": ["Sword","Gunpowder","Scout", "Peltast"],
         "column": 6,
         "row": 1
 	},
@@ -190,7 +190,7 @@
 		"name": "Medic",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": ["[+5] HP when healing", "All adjacent units heal [+5] HP when healing", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted"],
+		"unitTypes": ["Sword","Gunpowder","Mounted", "Scout", "Peltast"],
         "column": 10, // after scout base
         "row": 1
 	},
@@ -198,7 +198,7 @@
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
 		"uniques": ["[+5] HP when healing", "All adjacent units heal [+5] HP when healing", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Mounted"],
+		"unitTypes": ["Sword","Gunpowder","Mounted", "Scout"],
         "column": 10,
         "row": 2
 	},
@@ -206,8 +206,8 @@
 	// Scout
 	{
 		"name": "Scouting I",
-		"uniques": ["[+1] Movement", "No movement cost to pillage", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Scout"],
+		"uniques": ["[+1] Movement", "[+10]% XP gained from combat <for [All] Civilizations>"],
+		"unitTypes": ["Scout", "Peltast", "Mounted"],
         "column": 8,
         "row": 1
 	},
@@ -215,7 +215,7 @@
 		"name": "Scouting II",
 		"prerequisites": ["Scouting I"],
 		"uniques": ["[+1] Sight", "Can see invisible [Land] units", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Scout"],
+		"unitTypes": ["Scout", "Mounted"],
         "column": 8,
         "row": 2
 	},
@@ -362,7 +362,7 @@
 	{
 		"name": "Armor Plating I",
 		"uniques": ["[+25]% Strength <when defending>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"unitTypes": ["Aircraft Carrier", "Armored"],
         "column": 15,
         "row": 1
 	},
@@ -370,7 +370,7 @@
 		"name": "Armor Plating II",
 		"prerequisites": ["Armor Plating I"],
 		"uniques": ["[+25]% Strength <when defending>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"unitTypes": ["Aircraft Carrier", "Armored"],
         "column": 15,
         "row": 2
 	},
@@ -378,7 +378,7 @@
 		"name": "Armor Plating III",
 		"prerequisites": ["Armor Plating II"],
 		"uniques": ["[+25]% Strength <when defending>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Aircraft Carrier"],
+		"unitTypes": ["Aircraft Carrier", "Armored"],
         "column": 15,
         "row": 3
 	},
@@ -566,7 +566,7 @@
 	{
 		"name": "Anti-Armor I",
 		"uniques": ["[+25]% Strength <vs [Armored] units>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Helicopter"],
+		"unitTypes": ["Helicopter", "Fighter"],
         "column": 23,
         "row": 1
 	},
@@ -574,7 +574,7 @@
 		"name": "Anti-Armor II",
 		"prerequisites": ["Anti-Armor I"],
 		"uniques": ["[+25]% Strength <vs [Armored] units>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Helicopter"],
+		"unitTypes": ["Helicopter", "Fighter"],
         "column": 23,
         "row": 2
 	},
@@ -654,7 +654,7 @@
 	{
 		"name": "Cover I",
 		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Scout"],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Scout", "Peltast", "Armored"],
         "column": 24,
         "row": 1
 	},
@@ -662,7 +662,7 @@
 		"name": "Cover II",
 		"prerequisites": ["Cover I"],
 		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Scout"],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Scout", "Peltast", "Armored"],
         "column": 24,
         "row": 2
 	},
@@ -670,8 +670,8 @@
 	{
 		"name": "March",
 		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
-		"uniques": ["Unit will heal every turn, even if it performs an action", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
+		"uniques": ["Unit will heal every turn, even if it performs an action", "[+10]% XP gained from combat <for [All] Civilizations> <hidden from users>"],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted", "Peltast", "Armored"],
         "column": 10,
         "row": 3
 	},
@@ -680,7 +680,7 @@
 		"prerequisites": ["Shock II", "Drill II", "Targeting I",
 			"Bombardment I", "Boarding Party I", "Coastal Raider I", "Wolfpack I"],
 		"uniques": ["[+1] Movement", "Ignores Zone of Control", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword", "Gunpowder", "Mounted","Melee Water","Ranged Water","Armored", "Submarine"],
+		"unitTypes": ["Sword", "Gunpowder", "Mounted","Melee Water","Ranged Water","Armored", "Submarine", "Ranged Gunpowder", "Peltast"],
         "column": 24,
         "row": 3
 	},
@@ -688,7 +688,7 @@
 		"name": "Sentry",
 		"prerequisites": ["Accuracy II", "Barrage II", "Shock II", "Drill II", "Bombardment I", "Targeting I", "Boarding Party I", "Coastal Raider I"],
 		"uniques": ["[+1] Sight", "Can see invisible [Land] units", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword", "Gunpowder", "Mounted", "Ranged Water", "Siege", "Armored", "Melee Water", "Submarine", "Helicopter"],
+		"unitTypes": ["Sword", "Gunpowder", "Mounted", "Ranged Water", "Siege", "Armored", "Melee Water", "Submarine", "Helicopter", "Peltast"],
         "column": 24,
         "row": 4
 	},
@@ -704,7 +704,7 @@
 	{
 		"name": "Ambush I",
 		"uniques": ["[+33]% Strength <vs [Armored] units>", "Invisible to non-adjacent units <in [Rough terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber"],
+		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber", "Scout", "Peltast", "Archery", "Ranged Gunpowder", "Mounted", "Armored"],
         "column": 25,
         "row": 1
 	},
@@ -712,15 +712,15 @@
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
 		"uniques": ["[+33]% Strength <vs [Armored] units>", "Invisible to non-adjacent units <in [Open terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber"],
+		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber", "Scout", "Peltast", "Archery", "Ranged Gunpowder", "Mounted", "Armored"],
         "column": 25,
         "row": 2
 	},
 	{
 		"name": "Pride",
 		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III","Scouting III","Survivalism III"],
-		"uniques": ["[This Unit] heals [33] HP <hidden from users>", "[This Unit] heals [33] HP <upon being promoted>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"unitTypes": ["Sword", "Gunpowder","Archery", "Ranged Gunpowder", "Mounted", "Scout"],
+		"uniques": ["[This Unit] heals [33] HP <hidden from users>", "[This Unit] heals [33] HP <upon being promoted>", "[+10]% XP gained from combat <for [All] Civilizations> <hidden from users>"],
+		"unitTypes": ["Sword", "Gunpowder","Archery", "Ranged Gunpowder", "Mounted", "Scout", "Peltast", "Armored"],
         "column": 9,
         "row": 4
 	},
@@ -752,7 +752,7 @@
 	// Uniques that should be kept on upgrades
 	{
 		"name": "Morale", // Heroic Epic
-		"uniques": ["[+10]% Strength <while the empire is happy>", "[+5] HP when healing <while the empire is happy>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"]
+		"uniques": ["[+10]% Strength <while the empire is happy>", "[This Unit] gains [10] XP <upon defeating a [Barbarian] unit>", "[+5] HP when healing <while the empire is happy>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"]
 	},
 	{
 		"name": "Great Generals I", // only for Keshik and subsequent upgrades
@@ -851,20 +851,20 @@
 		"uniques": ["Ignores terrain cost <in [Friendly Land] tiles>", "Ignores Zone of Control <in [Friendly Land] tiles>", "Can move after attacking", "[+15]% Strength <when fighting in [Friendly Land] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"]
 	},
 	{
-		"name": "Buffalo Horns I", // only for Ikanda
+		"name": "Buffalo Horns", // only for Ikanda
 		"uniques": ["[+25]% to Flank Attack bonuses", "[+20]% Strength <when defending> <vs [Ranged] units>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
 	},
 	{
-		"name": "Buffalo Chest II",
+		"name": "Buffalo Chest",
 		"uniques": ["[+25]% to Flank Attack bonuses", "[+20]% Strength <when fighting in [Open terrain] tiles>", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"prerequisites": ["Buffalo Horns I"],
-		"unitTypes": ["Sword"]
+		"prerequisites": ["Buffalo Horns"],
+		"unitTypes": ["Sword", "Armored","Peltast", "Gunpowder"]
 	},
 	{
-		"name": "Buffalo Loins III",
-		"uniques": ["[+1] Movement", "Ignores Zone of Control", "[+10]% XP gained from combat <for [Gran Colombia] Civilizations> <hidden from users>"],
-		"prerequisites": ["Buffalo Chest II"],
-		"unitTypes": ["Sword"]
+		"name": "Buffalo Loins",
+		"uniques": ["[+1] Movement", "Ignores Zone of Control", "[+10]% XP gained from combat <for [All] Civilizations>"],
+		"prerequisites": ["Buffalo Horns"],
+		"unitTypes": ["Sword", "Armored", "Archery", "Peltast", "Gunpowder", "Ranged Gunpowder"]
 	},
 	{
 		"name": "River Mobility",
