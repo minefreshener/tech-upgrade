@@ -195,6 +195,12 @@
 				"quote": "'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
 			},
 			{
+				"name": "Iron Working",
+				"row": 6,
+				"prerequisites": ["Tunnel Mining"],
+				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+			}
+			{
 				"name": "Construction",
 				"row": 9,
 				"prerequisites": ["Masonry","Mathematics"],
@@ -240,12 +246,6 @@
 				"prerequisites": ["Construction"],
 				"uniques": ["Roads connect tiles across rivers"],
 				"quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
-			},
-			{
-				"name": "Iron Working",
-				"row": 9,
-				"prerequisites": ["Construction"],
-				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			}
 		]
 	},
