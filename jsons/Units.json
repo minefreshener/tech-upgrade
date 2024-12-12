@@ -51,7 +51,7 @@
 		"rangedStrength": 20,
 		"range": 1,
 		"cost": 150,
-		"requiredTech": "Metal casting",
+		"requiredTech": "Metal Casting",
 		"obsoleteTech": "Rifling",
 		"attackSound": "shot"
 	},
@@ -316,7 +316,7 @@
 		"strength": 22,
 		"requiredTech": "Military Organization",
 		"requiredResource": "Horses",
-		"upgradesTo": "cavalry",
+		"upgradesTo": "Cavalry",
 		"obsoleteTech": "Military Science",
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Free [Mamluk] appears <upon conquering a city>", "[+33]% Strength <vs [Archery] units>"],
 		"attackSound": "arrow"
@@ -360,7 +360,7 @@
 		"strength": 12,
 		"range": 3,
 		"rangedStrength": 16,
-		"requiredTech": "Military Organizatin",
+		"requiredTech": "Military Organization",
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
 		"uniques": ["Ranged attacks may be performed over obstacles", "[+25]% Strength <when fighting in [Rough terrain] tiles>"],
@@ -383,7 +383,7 @@
 	{
 		"name": "Hwach'a",
 		"unitType": "Siege",
-		"replaces": "Balista",
+		"replaces": "Ballista",
 		"uniqueTo": "Korea",
 		"movement": 2,
 		"strength": 10,
@@ -481,7 +481,7 @@
 	{
 		"name": "Janissary",
 		"unitType": "Gunpowder",
-		"replaces": "Musketman",
+		"replaces": "Musketeer",
 		"uniqueTo": "The Ottomans",
 		"movement": 2,
 		"strength": 24,
@@ -579,7 +579,7 @@
 		"requiredTech": "Metallurgy",
 		"requiredResource": "Horses",
 		"uniques": ["No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "[+50]% Strength <when attacking>"],
-		"upgradesTo": "Land Ship",
+		"upgradesTo": "Landship",
 		"obsoleteTech": "Mobile Tactics",
 		"attackSound": "horse"
 	},
