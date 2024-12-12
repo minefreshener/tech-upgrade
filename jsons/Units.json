@@ -244,7 +244,7 @@
 	},
 	{
 		"name": "Swordsman",
-		"unitType": "Sword",
+		"unitType": "Armored",
 		"movement": 2,
 		"strength": 14,
 		"cost": 73,
@@ -264,6 +264,18 @@
 		"cost": 87,
 		"requiredTech": "Steel",
 		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Rifling",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Halberdier",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 17,
+		"cost": 100,
+		"requiredTech": "Military Organization",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>", "[+50]% Strength <vs [Armored] units>"],
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
 		"attackSound": "metalhit"
@@ -643,6 +655,34 @@
 		"upgradesTo": "Landship",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
+	},
+	{
+		"name": "Dragoon",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 20,
+		"range": 1,
+		"rangedStrength": 25,
+		"cost": 125,
+		"requiredTech": "Matchlocks",
+		"upgradesTo": "Late Dragoon",
+		"obsoleteTech": "Military Science",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "Can move after attacking"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Late Dragoon",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 30,
+		"range": 2,
+		"rangedStrength": 30,
+		"cost": 180,
+		"requiredTech": "Military Science",
+		"upgradesTo": "Machine Gun",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "Can move after attacking"],
+		"attackSound": "shot"
 	},
 	{
 		"name": "Hussar",
